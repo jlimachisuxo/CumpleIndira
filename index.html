@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Indira 🎂</title>
+    <!-- Bootstrap 5 + iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts (estilo elegante) -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Audio (se reproduce al primer clic) -->
+    <audio id="bgAudio" loop>
+        <source src="audio/045.How Deep Is Your Love - Bee Gees.mp3" type="audio/mpeg">
+        <!-- Nota: reemplaza este enlace por un audio real de "Feliz Cumpleaños" si lo deseas.
+         Usamos un tono de ejemplo porque no podemos garantizar un archivo de cumpleaños externo estable. 
+         Para producción, coloca tu propio archivo: assets/cumpleanos.mp3 -->
+    </audio>
+
+    <!-- Toast de aviso para el audio (desaparece al hacer clic) -->
+    <div id="audioToast" class="audio-toast">
+        <i class="bi bi-music-note-beamed"></i> Porfa haz clic para reproducir la música 🎵
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="position-relative">
+        <div class="confetti-bg"></div>
+        <div class="container relative-z">
+
+            <!-- Hero / Título principal -->
+            <section class="hero-section">
+                <h1 class="hero-title">¡Feliz Cumpleaños, Indira!</h1>
+                <p class="hero-subtitle mt-3">
+                    <i class="bi bi-balloon-heart-fill me-2"></i> Hoy es un día especial <i
+                        class="bi bi-balloon-heart-fill me-2"></i>
+                </p>
+                <div class="separator"></div>
+                <p class="lead mt-3" style="max-width: 700px; margin: 0 auto; color: #5e2a6b;">
+                    Que este día esté lleno de alegría, sorpresas y mucho amor hermana.
+                </p>
+            </section>
+
+            <!-- Carrusel -->
+            <section class="my-5">
+                <div id="carouselIndira" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndira" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndira" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndira" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-4 shadow">
+                        <div class="carousel-item active">
+                            <img src="img/f2.jpg" class="d-block w-100" alt="Globos de cumpleaños">
+                            <div class="carousel-caption d-none d-md-block">
+                                <i class="bi bi-balloon-fill me-2"></i> 29 DE OCTUBRE UN DÍA ESPECIAL
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img style="width: 100%;" src="img/t2.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <i class="bi bi-cake2-fill me-2"></i> Un pastel muy dulce del sabor que más te guste,
+                                para alegrar tu día.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/f3.jpg" class="d-block w-100" alt="Fuegos artificiales">
+                            <div class="carousel-caption d-none d-md-block">
+                                <i class="bi bi-stars me-2"></i> ¡Globos y colores para ti!
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndira"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndira"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Tarjetas (3 columnas) -->
+            <section class="row g-4 my-5">
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <div class="card-icon"><i class="bi bi-heart-fill"></i></div>
+                        <h3 class="card-title-custom">Con cariño</h3>
+                        <p class="card-text">Cada detalle está pensado para recordarte lo especial que eres para mi.
+                            ¡Feliz vuelta al sol Indira!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <div class="card-icon"><i class="bi bi-gift-fill"></i></div>
+                        <h3 class="card-title-custom">Sorpresas</h3>
+                        <p class="card-text">Los mejores deseos, abrazos y aventuras están por venir. Disfruta este día
+                            al máximo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <div class="card-icon"><i class="bi bi-emoji-smile-fill"></i></div>
+                        <h3 class="card-title-custom">Sonrisas</h3>
+                        <p class="card-text">Que nunca te falte una razón para sonreír. Eres luz y alegría para quienes
+                            te rodean.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Galería de fotos (con imágenes temáticas) -->
+            <section class="my-5">
+                <h2 class="text-center text-morado mb-4" style="font-family: 'Great Vibes', cursive; font-size: 3rem;">
+                    Momentos mágicos</h2>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <img src="img/r2.jpg" alt="Celebración" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/r3.jpg" alt="Globos" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/r1.jpg" alt="Fiesta" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/r4.jpg" alt="Regalos" class="gallery-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-5">
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <img src="img/r5.jpg" alt="Celebración" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/r6.jpg" alt="Globos" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/r7.jpg" alt="Fiesta" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="img/r8.jpg" alt="Regalos" class="gallery-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de mensaje y botón -->
+            <section class="text-center my-5 p-5 bg-lila-suave rounded-5 shadow-sm">
+                <i class="bi bi-envelope-heart-fill display-4 text-morado"></i>
+                <h3 class="mt-3 text-morado">Un mensaje especial para ti</h3>
+                <p class="fs-5" style="max-width: 600px; margin: 0 auto 25px; color: #4a235a;">
+                    "Indira, mi querida amiga, hermana y complice de cada aventura buena y mala. Hoy al igual que los
+                    demás días venideros de este nuevo año, solo quiero que seas feliz, que puedas realizar lo que te propongas.
+                    Te quiero mucho hermana. Por que? porque eres una gran mujer, que se esfuerza por mejorar en todo hambito
+                    que a veces se pone anciosa, que llora cuando no tuvo un buen día (o tuvo un bajon) pero no se rinde se lavanta
+                    con buen humor, empieza a reir y vuelve a intentarlo. Amorosa, amable, comprtir cada momento contigo es tan
+                    agradable lleno de tantas emosiones, cada charla y risas son una curita para el corazón.  
+                    Sigue creyendo en el amor, porque el que te encuentre, habra encontrado un tesoro lleno de sorpresas, 
+                    un corazón dispuesto a amar, a apoyar y dar lo mejor, si el amor es mutuo.
+                    Asi que solo pido a Dios que este nuevo año de vida esté lleno de metas cumplidas, risas contagiosas y momentos inolvidables. 
+                    ¡Feliz cumpleaños Indira! 💜🧡"
+                </p>
+                <button class="btn btn-morado btn-lg" id="btnFestejar">
+                    <i class="bi bi-champagne me-2"></i> ¡Festejar!
+                </button>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom text-center">
+        <div class="container">
+            <p class="mb-1"><i class="bi bi-balloon-heart-fill me-2"></i> Hecho con mucho amor para Indira de tu hermana
+                Joshelyn</p>
+            <small>© 2026 · Que todos tus deseos se cumplan, sigue soñando.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (para carrusel y otros componentes) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lógica personalizada: audio y toast -->
+    <script>
+        (function () {
+            const audio = document.getElementById('bgAudio');
+            const toast = document.getElementById('audioToast');
+            let audioStarted = false;
+
+            // Función para iniciar audio y quitar el toast
+            function startAudio() {
+                if (!audioStarted) {
+                    audio.play().then(() => {
+                        audioStarted = true;
+                        // Ocultar el toast suavemente
+                        toast.style.opacity = '0';
+                        setTimeout(() => {
+                            toast.style.display = 'none';
+                        }, 500);
+                    }).catch(error => {
+                        console.warn('No se pudo reproducir el audio automáticamente:', error);
+                        // Si falla, mostramos otro mensaje o dejamos el toast
+                        toast.innerHTML = '<i class="bi bi-exclamation-triangle-fill"></i> Toca de nuevo para la música';
+                    });
+                }
+            }
+
+            // Escuchar el primer clic en cualquier parte del documento
+            document.addEventListener('click', startAudio, { once: false });
+            // También en touchstart para móviles
+            document.addEventListener('touchstart', startAudio, { once: false });
+
+            // Opcional: botón "Festejar" que también reproduce (por si acaso)
+            const btnFestejar = document.getElementById('btnFestejar');
+            if (btnFestejar) {
+                btnFestejar.addEventListener('click', function (e) {
+                    // No detener la propagación, así también se ejecuta startAudio
+                    if (!audioStarted) {
+                        audio.play().then(() => {
+                            audioStarted = true;
+                            toast.style.opacity = '0';
+                            setTimeout(() => { toast.style.display = 'none'; }, 500);
+                        }).catch(() => { });
+                    }
+                    // Pequeña animación al botón
+                    this.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i> ¡Genial!';
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="bi bi-champagne me-2"></i> ¡Festejar!';
+                    }, 1200);
+                });
+            }
+
+            // Asegurarse de que si el audio ya se reprodujo, el toast desaparezca
+            audio.addEventListener('play', () => {
+                if (toast.style.display !== 'none') {
+                    toast.style.opacity = '0';
+                    setTimeout(() => { toast.style.display = 'none'; }, 500);
+                }
+            });
+
+            // Si el audio falla, mostrar mensaje alternativo (opcional)
+            audio.addEventListener('error', () => {
+                toast.innerHTML = '<i class="bi bi-music-note"></i> No se pudo cargar el audio';
+            });
+        })();
+    </script>
+</body>
+
+</html>
